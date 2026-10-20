@@ -1,0 +1,109 @@
+# Bài 13
+
+## Sheet1
+
+### Bảng lỗi
+
+| Lỗi | Vị trí (hàng) | Quy tắc bị vi phạm |
+|-----|---------------|--------------------|
+| 1 | Hàng 1 (ô A1:E1 đang bị MERGE làm tiêu đề lớn): "DANH SÁCH MƯỢN SÁCH THÁNG 10" | Quy tắc số 1 |
+| 2 | Hàng 5 (để trống hoàn toàn) | Quy tắc số 4 |
+| 3 | Hàng 6 : Tổng cộng | Quy tắc số 5 |
+
+### DANH SÁCH MƯỢN SÁCH THÁNG 10
+
+| MSSV | Họ tên | Mã sách | Tên sách | Ngày mượn | Tình trạng |
+|------|--------|---------|----------|-----------|------------|
+| SV001 | Nguyễn Văn An | S001 | Công nghệ thông tin | 01-10-26 | Đang mượn |
+| SV002 | Trần Thị Bình | S002 | Toán học | 03-10-26 | Quá hạn |
+| SV003 | Lê Văn Cường | S003 | Kỹ năng sống | 10-10-26 | Đã trả |
+| SV004 | Trần Thu Hà | S099 | Không tìm thấy sách | 12-10-26 | Đang mượn |
+| **Tổng cộng** | | | | | 2 phiếu |
+
+### Ghi chú
+
+- **Field (hàng dọc)** vd: MSSV, Họ tên,…
+- **Record (hàng ngang):** SV001, Nguyễn Văn An,….
+- S099 bị lỗi vì hàm VLOOKUP chỉ dò đến A4:C6 trong khi S099 lại nằm tương đương với A7 và C7 nên nó nằm ngoài vùng dữ liệu mà hàm quét
+
+## Sheet DANHMUCSACH
+
+| Mã Sách | Tên Sách | Thể Loại |
+|---------|----------|----------|
+| S001 | Lập Trình C Căn Bản | Công nghệ thông tin |
+| S002 | Giải Tích 1 | Toán học |
+| S003 | Kỹ Năng Mềm | Kỹ năng sống |
+
+---
+
+# Bài Tổng Hợp (file Word)
+
+## Mục lục
+
+1. Giới thiệu dự án
+   1. Mục tiêu
+   2. Đối tượng sử dụng
+2. Chức năng hệ thống
+   1. Quản lí mượn sách
+      1. Luồng mượn sách qua thẻ sinh viên
+   2. Quản lí trả sách
+3. Yêu cầu bảo mật
+
+## 1. Giới thiệu dự án
+
+### 1.1. Mục tiêu
+
+### 1.2. Đối tượng sử dụng
+
+## 2. Chức năng hệ thống
+
+**Yêu Cầu Chức Năng (Functional Requirements)**
+
+- Khách hàng có thể tìm kiếm sản phẩm theo tên và mức giá.
+- Sinh viên có thể quét mã QR để đăng ký mượn sách thư viện.
+
+### 2.1. Quản lí mượn sách
+
+#### 2.1.1. Luồng mượn sách qua thẻ sinh viên
+
+### 2.2. Quản lí trả sách
+
+## 3. Yêu cầu bảo mật
+
+**Yêu Cầu Phi Chức Năng (Non-functional Requirements)**
+
+- Thời gian phản hồi trang tìm kiếm phải dưới 1.5 giây.
+- Hệ thống chịu tải đồng thời tối thiểu 10.000 người dùng cùng lúc.
+
+---
+
+# IT108_Nhap_mon_cntt_Session11_Bai_Tong_Hop (Google Docs)
+
+## Phần 4 – Slide báo cáo tiến độ
+
+**Assertion Title (Tiêu đề khẳng định):** 50% lượng sách đang được mượn và 25% đã quá hạn, cần có chế độ nhắc hẹn tự động
+
+**Content Area:**
+
+- **Con số nổi bật:**
+  - Con số lớn: 75%
+  - Giải thích: Phần trăm số sách chưa được thu hồi (50% Đang mượn + 25% Quá hạn) trên tổng số 4 lượt mượn trong tháng.
+
+- **Chọn loại biểu đồ:**
+  - Loại biểu đồ chọn: Donut Chart (Biểu đồ tròn khuyết)
+  - Dữ liệu đưa vào biểu đồ:
+    - Đang mượn: 50% (2 cuốn / 4)
+    - Quá hạn: 25% (1 cuốn / 4)
+    - Đã trả: 25% (1 cuốn / 4)
+  - Lý do chọn Donut Chart:
+    - Vì chỉ có 3 mục: Đang mượn, Quá hạn, Đã trả, nên rất phù hợp với Donut chart mà không gây rối mắt.
+    - Khoảng trống ở giữa tâm của Donut chart là vị trí tối ưu để đặt con số nổi bật (75%) hoặc tổng số phiếu mượn (4), giúp mắt người xem nắm bắt ngay thông điệp
+
+**Quy tắc 10/20/30 quy định:** 10 slide – thời gian trình bày 20 phút – cỡ chữ tối thiểu 30pt.
+
+- slide này chiếm bao nhiêu trong tổng 10 slide?
+  - Slide này chiếm 1 slide duy nhất trong tổng số 10 slide
+
+- Thời gian trình bày dự kiến:
+  - Trung bình mỗi slide sẽ đc 2p/slide.
+  - Thời lượng trình bày cho slide là từ 2 đến 2,5 phút trước khi chuyển tiếp sang các đề xuất kỹ thuật vì có các thông số cần đc làm rõ.
